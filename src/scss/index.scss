@@ -1,0 +1,197 @@
+// fonts 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+// general styling
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f2f2f2;
+    min-height: 1000px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// navigation
+.my-account-section {
+    background: #000;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    text-transform: uppercase;
+    padding: 12px;
+    font-weight: bold;
+    
+    .text {
+        font-size: 11px;
+        line-height: -1px;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        span {
+            margin-left: 5px;
+        }
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+nav {
+    background: #fff;
+
+    .top {
+        padding: 15px;
+
+        .logo {
+            width: 260px;
+        }
+
+        .nav-btn {
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .sticky-part {
+        // does not work for some reason :/
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid #ccc;
+        backdrop-filter: blur(20px);
+        background-color: rgba(255, 255, 255, 0.7);
+
+        p {
+            color: #ccc;
+            margin: 0 20px;
+
+            .menu-btn {
+                margin-right: 7px;
+                cursor: pointer;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+
+            span {
+                text-transform: uppercase;
+                font-size: 10px;
+                align-self: center;
+            }
+        }
+
+        button {
+            height: 45px;
+            width: 120px;
+            background: aqua;
+            border: 0;
+            cursor: pointer;
+            justify-content: center;
+            transition: background 0.3s ease;
+
+            i {
+                margin-right: 8px;
+            }
+
+            span {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            &:hover {
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+}
+// navigation end
+
+// first section 
+section.first-section {
+    display: flex;
+    flex-direction: column; 
+    padding-top: 80px;
+
+    .video-col {
+        background: url("../assets/images/first-bg.png");
+        background-size: cover;
+        background-position: center center;
+        padding: 0 25px 25px 25px;
+
+        video {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .text-col {
+        padding: 25px;
+
+        h1 {
+            font-weight: 900;
+            color: #000042;
+
+            .light {
+                text-transform: uppercase;
+                display: block;
+                font-size: 16px;
+                font-weight: light;
+            }
+
+            .bold {
+                display: block;
+                font-size: 40px;
+                letter-spacing: 1px;
+                margin: 5px 0;
+            }
+        }
+
+        p {
+            max-width: 630px;
+            color: #78888F;
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        button {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            fill: #000042;
+            color: #000042;
+            background-color: #00F1FF;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.3);
+            border: 0;
+            padding: 15px 30px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            i {
+                margin-right: 5px;
+            }
+
+            &:hover {
+                background: #000042;
+                color: #fff;
+            }
+        }
+    }
+}
+// first section end 

@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;700;900&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f2f2;
+  min-height: 1000px;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-account-section {
+  background: #000;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-transform: uppercase;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.my-account-section .text {
+  font-size: 11px;
+  line-height: -1px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.my-account-section .text span {
+  margin-left: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+nav {
+  background: #fff;
+}
+
+nav .top {
+  padding: 15px;
+}
+
+nav .top .logo {
+  width: 260px;
+}
+
+nav .top .nav-btn {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav .sticky-part {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+nav .sticky-part p {
+  color: #ccc;
+  margin: 0 20px;
+}
+
+nav .sticky-part p .menu-btn {
+  margin-right: 7px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+nav .sticky-part p .menu-btn:hover {
+  color: #000;
+}
+
+nav .sticky-part p span {
+  text-transform: uppercase;
+  font-size: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav .sticky-part button {
+  height: 45px;
+  width: 120px;
+  background: aqua;
+  border: 0;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+nav .sticky-part button i {
+  margin-right: 8px;
+}
+
+nav .sticky-part button span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+nav .sticky-part button:hover {
+  background: #fff;
+  color: #000;
+}
+
+section.first-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 80px;
+}
+
+section.first-section .video-col {
+  background: url("../assets/images/first-bg.png");
+  background-size: cover;
+  background-position: center center;
+  padding: 0 25px 25px 25px;
+}
+
+section.first-section .video-col video {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+section.first-section .text-col {
+  padding: 25px;
+}
+
+section.first-section .text-col h1 {
+  font-weight: 900;
+  color: #000042;
+}
+
+section.first-section .text-col h1 .light {
+  text-transform: uppercase;
+  display: block;
+  font-size: 16px;
+  font-weight: light;
+}
+
+section.first-section .text-col h1 .bold {
+  display: block;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+section.first-section .text-col p {
+  max-width: 630px;
+  color: #78888F;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+section.first-section .text-col button {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  fill: #000042;
+  color: #000042;
+  background-color: #00F1FF;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.3);
+  border: 0;
+  padding: 15px 30px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+section.first-section .text-col button i {
+  margin-right: 5px;
+}
+
+section.first-section .text-col button:hover {
+  background: #000042;
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */

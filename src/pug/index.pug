@@ -1,0 +1,64 @@
+doctype html
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title WP Configurator Plugin 
+        // styles
+        link(rel="stylesheet" href="./styles/index.css")
+        // font awesome 
+        link(href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+            rel="stylesheet"  
+            type='text/css')
+    body 
+        // section with "my account" text 
+        div.my-account-section 
+            div.text 
+                i.fa.fa-user
+                span my account 
+
+        // NAVIGATION 
+        nav 
+            // top
+            div.top.flex-center
+                img(src="./assets/images/logo.png" class="logo")
+                i.fa-solid.fa.fa-bars.nav-btn
+
+            // bottom
+            div.sticky-part.flex-center
+                p.flex-center
+                    i.fa-solid.fa.fa-bars.menu-btn
+                    span menu  
+                button.flex-center
+                    i.fa.fa-shopping-cart
+                    span buy pro 
+        // NAVIGATION END 
+
+        // FIRST SECTION 
+        section.first-section 
+            div.video-col 
+                video(
+                    src="https://wpconfigurator.com/wp-content/uploads/2021/02/portada-3-wp-configurator.mp4"
+                    autoplay
+                    loop 
+                    muted="muted"
+                    playsinline 
+                    controlslist="nodownload"
+                ) 
+            div.text-col 
+                h1 
+                    span.light if you can dream it 
+                    span.bold You can Configure it 
+                p
+                    span Imagine any product, which you can offer your customers, to configure according to their requirement.
+                    span.bold With WP Configurator Plugin infinite possibilities at your fingertips. 
+                    span The ‘Hyper Personalization’ has arrived; discover the full-featured Product Configurator on WordPress.
+                p.bold Join 5000+ Professional Customizing Products with Configurator.
+                button 
+                    i(class="fa fa-rocket" aria-hidden="true")
+                    span get started
+        // FIRST SECTION END 
+
+        
+    
